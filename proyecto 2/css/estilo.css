@@ -1,3 +1,19 @@
+.contenedor{
+    width: 845px;
+    height: 50px;
+    border: 1px solid #ccc ;
+    float:right ;
+    margin-top: 50px;
+    background-color: cornflowerblue;
+}
+.header{
+    width: 1000px;
+    height: 125px;
+    border: 1px solid #000 ;
+    background-color: lightblue;
+    text-align: center;
+
+}
 
 
  
