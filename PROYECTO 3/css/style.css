@@ -1,49 +1,82 @@
+*{
+-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.fondo{
+    color:green ;
+}
 body{
+    color: rgb(0, 0, 0);
     margin: 0;
     padding: 0;
     font-family: 'calibri light';
 
 }
-#linea{
+body{
+    color: cadetblue;
+}
+
+#cabeza{
     width: 100%;
     height: 5px;
-    background: #086a87;
+    background: #1193bb;
 }
 #header{
     width: 100%;
-    height: 90px;
-    background: #0b2f3a;
+    height: 125px;
+    background: #1ec4ee;
 }
 #header #centro1{
-    width: 800px;
-    height: auto; overflow: hidden;
-    border: 1px solid;
+    width: 900px;
+    height:2px;
+    border: 0px solid;
     margin: auto;
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
 }
 #header #centro1 #logo{
-    width: 200px; border: 1px solid;
+    width: 100px; 
+    height: 125px;
+    border: 0px solid;
     float: left;
+
+    
 }
 #header #centro1 #logo h2,p{
-    color: #fff;
+    
+    color: rgb(3, 2, 2);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 123;
+    height: 200;
 }
+
 #header #centro1 #logo p{
     margin-top: -20px;
+    width: 100px;
+    height: 130;
 }
 /*--------Menu--------*/
 #header #menu{
-    width: 580px;
+    width: 750px;
     height: auto; 
     overflow: hidden;
-    border: 1px solid; 
+    border: 0px solid; 
     float: right;
+    margin-top: 40px;
+    text-align: right;
 }
 #header #menu ul li{
     display: inline-block;
 }
 #header #menu ul li a{
-    color: #04b4ae;
+    color: #030007;
     text-decoration: none;
     padding: 7px 10px;
     margin: 0px 4px;
+}
+#header #menu ul li a :hover{
+    background: #0a2a29;
 }

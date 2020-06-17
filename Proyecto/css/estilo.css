@@ -1,10 +1,13 @@
 #principal{
  width: 1000px;
  height: 1000px;
- border: 1px solid #000 ;
+ border: none;
  margin: auto; 
+}
  
- 
+.fondo{
+    background:url("imagenes/insummos.jpg");
+
 }
 header{
     width: 1000px;
