@@ -1,27 +1,26 @@
-#principal{
- width: 1000px;
- height: 1000px;
- border: none;
- margin: auto; 
-}
- 
-.fondo{
-    background:url("imagenes/insummos.jpg");
+body{
+ background:rgb(114, 202, 230);
 
 }
 header{
     width: 1000px;
     height: 125px;
-    border: 1px solid #000 ;
+    border:none ;
     background-color: lightblue;
     text-align: center;
-
 }
-#logo{
+    .contenedor{
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+        
+}
+.logo{
     width: 150px;
     height: 125px;
     border: 1px solid #000 ;
     float: left;
+   
 }
 .menu{
     width: 845px;
@@ -43,7 +42,10 @@ header{
     border: 0px solid  #ccc;
     color: rgb(12, 12, 12);
 }
+.fondo{
+    background:url("imagenes/insummos.jpg");
 
+}
 #slide{
     margin-top: 80px;
     width: 1000px;
