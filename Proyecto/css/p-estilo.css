@@ -1,24 +1,34 @@
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
 body{
- background:rgb(114, 202, 230);
+ background:rgb(5, 52, 66);
 
+}
+
+.contenedor{
+    width: 100%;
+    margin: auto;
+	display: flex;
+	flex-direction:row;
+	flex-wrap:wrap;
 }
 header{
     width: 100%;
     height: 125px;
     border:none ;
-    background-color: lightblue;
+    background-color: rgb(57, 166, 245);
     text-align: center;
 }
-    .contenedor{
-        width: 100%;
-        margin: 0 auto;
-        overflow: hidden;
-        
-}
+
 .logo{
-    width: 150px;
-    height: 125px;
-    border: 1px solid #000 ;
+    width: 20%;
+    height: 100%;
+    border: none ;
     float: left;
    
 }
@@ -28,7 +38,7 @@ header{
     border: 1px solid #ccc ;
     float:right ;
     margin-top: 50px;
-    background-color: cornflowerblue;
+    background-color: rgb(31, 248, 241);
 
 }
 header .menu a:hover {text-decoration: underline;}
@@ -42,18 +52,7 @@ header .menu a:hover {text-decoration: underline;}
     border: 0px solid  #ccc;
     color: rgb(12, 12, 12);
 }
-.fondo{
-    background:url("imagenes/insummos.jpg");
-    width: 100px;
-    
 
-
-}
-#slide{
-    margin-top: 80px;
-    width: 1000px;
-    height: 500;
-}
 #logoimg{
     width: 100px;
     height: 100px;
@@ -73,6 +72,7 @@ header .menu a:hover {text-decoration: underline;}
 	width: 100%;
 }
 
+
 .content article h2 {
 	margin-bottom: 20px;
 	font-weight: normal;
@@ -85,32 +85,104 @@ header .menu a:hover {text-decoration: underline;}
 	line-height: 27px;
 }
 aside {
-	width: 25%;
+	width: 30%;
 	background: #0f2dee;
-	padding: 20px;
+	padding: 17px;
 	display: flex;
-	flex-direction:column-reverse;
+	flex-direction:column;
 	flex-wrap:wrap-reverse;
     align-content:space-between;
     font-stretch:extra-condensed;
+
 }
 
 aside .inf {
-	font-size: 30px;
+    font-size:30px;
 	text-align: center;
 	color: #fff;
 	padding: 50px 0;
-	background: #4264a2;
+    background: #4264a2;
+    
 }
+
+
+
 footer {
-    margin-top: 80%;
-	background: rgba(19, 4, 106, 0.2);
+    margin-top: 20%;
+	background: rgba(222, 221, 231, 0.2);
 	padding: 20px;
 	margin-bottom: 20px;
-	width: auto;
-	color: rgb(19, 18, 18);
+	width: 100%;
+	color: rgb(220, 233, 233);
 	display: flex;
 	flex-direction:row;
 	flex-wrap:no-wrap;
 	justify-content:space-between;
 } 
+
+
+footer .redes-sociales a {
+	color: #fff;
+	text-decoration: underline;
+	margin-left: 20px;
+}
+
+footer .redes-sociales a:hover {
+	text-decoration: none;
+}
+@media screen and (max-width: 800px) {
+	.main {
+		width: 100%;
+	}
+
+	aside {
+		width: 100%;
+		flex-direction:row;
+	}
+
+	aside .ad {
+		width: 40%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	header {
+		flex-direction:column;
+		padding-bottom: 20px; 
+	}
+
+	header .menu {
+		width: 100%;
+		background: rgba(255,255,255,.2);
+		text-align: center;
+		padding: 20px;
+	}
+
+	header .logo {
+		margin-bottom: 20px;
+	}
+
+	header .menu a {
+		margin:0 20px; 
+	}
+
+	footer {
+		flex-direction:column;
+		text-align: center;
+	}
+
+	footer .autor {
+		order:2;
+	}
+
+	footer .redes-sociales {
+		order:1;
+		margin-bottom: 20px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	aside {
+		display: none;
+	}
+}
