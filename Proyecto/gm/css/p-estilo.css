@@ -102,14 +102,19 @@ aside {
 }
 
 aside .inf {
+    width: a;
+    height: 30%;
     font-size:30px;
 	text-align: center;
-	color: #fff;
-	padding: 50px 0;
-    background: #4264a2;
-    
+	display: flex;
+    flex-wrap:wrap;
 }
-
+img{
+    width: 100%;
+}
+.telf ul li a{
+    color: darkblue;
+}
 
 
 footer {
