@@ -1,0 +1,291 @@
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	background: rgb(10, 126, 235);
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Sans-serif;
+}
+.formulario {
+	width: 500px;
+	margin: 30px auto;
+	padding: 20px;
+	border-radius: 20px;
+}
+.formulario input {
+	display: block;
+}
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="radio"],
+.formulario input[type="checkbox"],
+.formulario textarea {
+	width: 100%;
+	padding: 20px;
+	margin-bottom: 20px;
+	border-radius: 3px;
+	border:1px solid #22ebee;
+	font-size: 16px;
+    font-family: Times New Roman;
+}
+.formulario textarea {
+	min-height: 120px;
+	max-height: 300px;
+	min-width: 100%;
+	max-width: 100%;
+}
+.formulario input[type="text"]:focus,
+.formulario input[type="email"]:focus,
+.formulario input[type="radio"]:focus,
+.formulario input[type="checkbox"]:focus,
+.formulario textarea:focus {
+	border:3px solid #082764;
+}
+.formulario input[type="submit"] {
+	width: 100px;
+	margin: 0 auto;
+	padding: 10px;
+	border:1px solid #000;
+	color: #0d0e0d;
+	background: none;
+	cursor: pointer;
+	border-radius: 3px;
+	font-size: 16px;
+}
+.formulario input[type="submit"]:hover {
+	background: #9220d0;
+	color: rgb(24, 35, 240);
+}
+* {
+	padding: 0;
+	
+	
+	box-sizing: border-box;
+}
+body{
+ background:rgb(121, 207, 233);
+
+}
+nav {
+	margin: 0 auto;
+	max-width: 760px;
+	background-color: rgb(0, 21, 112);
+}
+
+
+.menu li:first-child {
+	display: block;
+}
+.menu li {
+	display: none;
+}
+.menu a {
+	display: block;
+	
+	padding: 0.75rem;
+	text-align:center;
+	text-decoration: none;
+}
+.menu a:hover {
+	
+	font-weight: 700px;
+}
+
+.menu {
+width: 80%;
+height: 50px;
+border:none;
+float:right ;
+list-style: none;
+text-align: center;
+padding: 0;
+}
+header .menu a:hover {text-decoration: underline;}
+
+.item:hover {
+/* box-shadow: 0 0 50px #333;*/
+}
+
+
+
+/* the onclick JS toggles the .repsonsive class from display none (.menu li) to display block because the repsonsive class is added to the end of the class list like this in HTML Line #6.
+<ul class="menu responsive">
+*/
+.responsive li {
+ display: block;
+}
+
+/* Media Query for medium + screens */
+@media only screen and (min-width: 32.5em) {
+ .menu {
+	 display: flex;
+ }
+ .menu li:first-child {
+	 display: none;
+ }
+ .menu li {
+	 display: block;
+	 flex: 1 1 100%;
+ }
+ .menu li a {
+	 color: rgb(28, 28, 181);
+ }
+}
+
+.contenedor{
+    width: 100%;
+    margin: auto;
+	display: flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+}
+header{
+    width: 100%;
+    height: 125px;
+    background-color: rgb(57, 166, 245);
+    text-align: center;
+}
+.telf ul li a{
+    color: rgb(42, 213, 240);
+    flex-wrap:wrap;
+    display: flex;
+    flex-direction:row;
+    margin: auto;
+
+}
+
+.logo{
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+
+#logoimg{
+    width: 100px;
+    height: 100px;
+}
+.content {
+	background: #fff;
+	padding: 20px;
+	width: 70%;
+}
+
+.content article .gif {
+	margin-bottom: 20px;
+}
+
+.content article .gif img {
+	vertical-align: top;
+	width: 100%;
+}
+
+
+.content article h1 {
+	margin-bottom: 40px;
+	font-weight: normal;
+	font-size: 45px;
+	color: darkblue;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	text-align: center;
+}
+article h3{
+	color: darkgrey;
+	margin-bottom: 40px;
+	font-weight: normal;
+	font-size: 45px;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	text-align: center;
+
+
+}
+article .pf{
+flex-wrap:wrap ;
+display:flex;
+margin: 14px;
+flex-direction: row;
+align-content: space-around;
+justify-content: center;
+padding: 65px;
+
+}
+
+.content article p {
+	margin-bottom: 20px;
+	font-size: 14px;
+	line-height: 27px;
+}
+aside {
+	width: 30%;
+	background: #0f2dee;
+	padding: 17px;
+	display: flex;
+	flex-direction:column;
+	flex-wrap:wrap-reverse;
+    align-content:space-between;
+    font-stretch:extra-condensed;
+
+}
+
+aside .inf {
+    font-size:30px;
+	text-align: center;
+	color: #fff;
+	padding: 50px 0;
+    background: #4264a2;
+    
+}
+
+
+
+footer {
+    margin-top: 20%;
+	background: rgba(222, 221, 231, 0.2);
+	padding: 20px;
+	margin-bottom: 20px;
+	width: 100%;
+	color: rgb(19, 20, 20);
+	display: flex;
+	flex-direction:row;
+	
+	justify-content:space-between;
+} 
+
+
+footer .redes-sociales a {
+	color: rgb(29, 27, 27);
+	text-decoration: underline;
+	margin-left: 20px;
+}
+
+footer .redes-sociales a:hover {
+	text-decoration: none;
+}
+@media screen and (max-width: 600px) {
+
+
+	footer {
+		flex-direction:column;
+		text-align: center;
+	}
+
+	footer .autor {
+		order:2;
+	}
+
+	footer .redes-sociales {
+		order:1;
+		margin-bottom: 20px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	aside {
+		display: none;
+	}
+	header {
+		display: none;
+	}
+}
